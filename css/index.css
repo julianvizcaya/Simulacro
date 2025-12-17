@@ -30,7 +30,6 @@ li {
         & .header__brand {
             display: inline-block;
 
-
             & .Logo {
                 display: block;
                 max-width: 1450px;
@@ -38,24 +37,9 @@ li {
             }
 
             & .Logo__pq {
-                display: inline-block;
-                font-size: 20px;
-                font-weight: 700;
+                display: none;
                 color: #ffffff;
             }
-
-    &.sticky {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-
-        background: #1a1a1a;
-        z-index: 999;
-        padding: 18px 40px;
-       
-
-    
         }
 
         & .nav {
@@ -63,7 +47,6 @@ li {
             display: flex;
             justify-content: flex-end;
             gap: 36px;
-
             flex-wrap: nowrap;
             white-space: nowrap;
 
@@ -77,13 +60,49 @@ li {
             & .nav__link:hover {
                 text-decoration: underline;
                 text-underline-offset: 6px;
+
                 }
+            }
+        }
+
+            &.fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+
+            background: #1a1a1a;
+            z-index: 1000;
+            padding: 18px 40px;
+
+            & .header__content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        & .Logo {
+            display: none;
+        }
+
+        & .Logo__pq {
+            display: inline-block;
+            font-size: 20px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        & .nav {
+            margin-top: 0;
+
+            & .nav__link {
+            color: #ffffff;
             }
         }
     }
 }
 
-
+ 
 /* /Header */
 
 /*  Hero  */
