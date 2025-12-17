@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 0;
+    background-color:  #f6b56b;
+    color: #0b0b0b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+/* Header  */
+.header {
+    padding: 26px 40px 10px;
+
+    & .header__content {
+        max-width: 1450px;
+        margin: 0 auto;
+
+        & .header__brand {
+            display: inline-block;
+
+
+            & .Logo {
+                display: block;
+                max-width: 1450px;
+                height: auto;
+            }
+
+            & .Logo__pq {
+                display: inline-block;
+                font-size: 20px;
+                font-weight: 700;
+                color: #ffffff;
+            }
+
+    &.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        background: #1a1a1a;
+        z-index: 999;
+        padding: 18px 40px;
+       
+
+    
+        }
+
+        & .nav {
+            margin-top: 38px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 36px;
+
+            flex-wrap: nowrap;
+            white-space: nowrap;
+
+            & .nav__link {
+                color: #0b0b0b;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            & .nav__link:hover {
+                text-decoration: underline;
+                text-underline-offset: 6px;
+                }
+            }
+        }
+    }
+}
+
+
+/* /Header */
+
+/*  Hero  */
+.hero {
+    padding: 40px 40px 90px;
+
+    & .hero__content {
+        max-width: 1400px;
+
+        & .hero__hello {
+            margin: 0 0 20px;
+            font-size: 90px;
+            font-weight: 100;
+            letter-spacing: -1px;
+        }
+
+        & .hero__tittle {
+            margin: 0 0 30px;
+            font-size: 100px;
+            font-weight: 100;
+            line-height: 1.1;
+        }
+
+        & .hero__link {
+            display: inline-block;
+            padding: 10px 50px 0 0;
+            color: #0b0b0b;
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+            text-underline-offset: 1px;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+    }
+}
+/*  /Hero  */
+
+/*  Grid  */
+.gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: 350px;
+    grid-auto-flow: dense;
+    padding: 20px 40px 80px;
+    gap: 24px;
+    background: #f6b56b;
+
+    & .grid__item {
+        background: gainsboro;
+
+        &.big {
+            grid-column: 2 span;
+            grid-row: 2 span;
+            background: #0b0b0b;
+            color: aliceblue;
+            justify-items: center;
+            align-content: center;
+            font-size: 120px;
+        }
+    }
+}
+/*  /Grid  */
+
+/* Form */
+.newsletter {
+    padding: 70px 40px 90px;
+
+    & .newsletter__content {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        align-items: center;
+        gap:  70px;
+        max-width: 1400px;
+
+        & .newsletter__image {
+            min-width: 520px;
+            height: auto;
+            display: block;
+        }
+
+        & .newsletter__form {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                margin: 0 0 18px;
+                font-size: 48px;
+                font-weight: 100;
+            }
+
+            p {
+                margin: 0 0 28px;
+                font-size: 23px;
+                max-width: 800px;
+                line-height: 1.5;
+            }
+
+            form {
+                display: flex;
+                width: 100%;
+                max-width: 980px;
+
+                & .form__input {
+                    width: 100%;
+                    border: 3px solid #0b0b0b;
+                    height: 40px;
+                    padding: 24px;
+                    font-size: 18px;
+                    outline: none;
+                    background: #ffffff;
+                }
+
+                & .btn {
+                    padding: 0 28px;
+                    border: 3px solid #0b0b0b;
+                    border-left: none;
+                    background-color: #0b0b0b;
+                    color: #ffffff;
+                    font-size: 18px;
+                    font-weight: 700;
+                    cursor: pointer;
+                }
+
+                .btn:hover {
+                    opacity: 0.9;
+                    background-color: #ffffff;
+                    color: #0b0b0b;
+                }
+            }
+        }
+    }
+}
+/* /Form */
+
