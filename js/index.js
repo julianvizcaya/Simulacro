@@ -1,7 +1,7 @@
 const headerEffect = document.getElementById('header__effect')
 
 function setFixed() {
-    const activar = 60 
+    const activar = 30 
 
     if (window.scrollY >= activar) {
         if (!headerEffect.classList.contains('fixed')) {

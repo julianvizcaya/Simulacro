@@ -56,13 +56,13 @@ li {
             text-decoration: none;
             font-size: 18px;
             font-weight: 600;
+            }
 
             & .nav__link:hover {
                 text-decoration: underline;
                 text-underline-offset: 6px;
 
             }
-        }
     }
         &.fixed {
         position: fixed;
