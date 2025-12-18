@@ -1,11 +1,12 @@
 const headerEffect = document.getElementById('header__effect')
 
 function setFixed() {
-    const activar = 80 
+    const activar = 60 
 
     if (window.scrollY >= activar) {
-        if (!headerEffect.classList.contains('fixed'))
+        if (!headerEffect.classList.contains('fixed')) {
         headerEffect.classList.add('fixed')
+        }
 
         document.body.style.paddingTop = headerEffect.offsetHeight + 'px'
     } else {
